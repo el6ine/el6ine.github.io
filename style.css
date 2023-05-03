@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --lightest-purple: rgb(237, 234, 255);
+    scroll-behavior: smooth;
+    cursor: url('kuromidefault.cur'), auto;
+}
+
+body{
+    background-color: var(--lightest-purple);
+
+}
+
+#header{
+    width: 100%;
+    height: 30vh;
+    background-color: darkslateblue;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color:lightpink;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content:' ';
+    width:0;
+    height:3px;
+    background: var(--lightest-purple);
+    position:absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    padding-left: 20px;
+    margin-top: 2%;
+    color:white;
+}
+
+h1{
+    color:lightpink;
+    font-size: 50px;
+}
+
+#about{
+    color: darkslateblue;
+    padding-top: 5%;
+    text-align: center;
+    width:100%;
+}
+
+h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#about p{
+    padding: 20px;
+}
+
+#about p a{
+    color:palevioletred;
+}
+
+#about img{
+    width: 13%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkslateblue;
+}
+
+h3{
+    font-size: 50px;
+    color: darkslateblue;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 20px;
+}
+
+#projects .container{
+    text-align: center;
+    color: darkslateblue;
+    padding:1%;
+}
+
+#projects p{
+    padding-bottom: 7px;
+}
+
+#projects a{
+    color:palevioletred;
+}
+
+h4{
+    font-size: 20px;
+}
+
+.swiper {
+    width: 300px;
+}
+
+.swiper img{
+    width: 300px;
+}
+
+.swiper-button-prev::after{
+    color:var(--lightest-purple);
+}
+
+.swiper-button-next::after{
+    color:var(--lightest-purple);
+}
+
+#contact {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+h5{
+    font-size: 50px;
+    color:darkslateblue;
+    padding-bottom: 50px;
+}
+
+.contact-col1 {
+    color:darkslateblue;
+    flex-basis: 35%;
+    float: left;
+}
+
+.contact-col2{
+    flex-basis: 60%;
+    float:right;
+}
+
+.contact-col1 p{
+    margin-top: 30px;
+}
+
+.socials a{
+    text-decoration: none;
+    margin-right: 15px;
+    color:darkslateblue;
+    display: inline-block;
+    font-size: 25px;
+    transition: transform 0.2s;
+    margin-top: 7px;
+}
+
+.socials a:hover{
+    transform: translateY(-5px);
+    color:palevioletred;
+}
+
+.btn{
+    color:darkslateblue;
+    background-color: var(--lightest-purple);
+    display: inline-block;
+    width: fit-content;
+    border: 1px solid darkslateblue;
+    padding: 14px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.btn:hover{
+    background-color: pink;
+    transform: translateY(-5px);
+}
+
+.contact-col2 form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: darkslateblue;
+    border-radius: 7px;
+    font-size: 15px;
+    resize: none;
+}
+
+#msg{
+    color:darkslateblue;
+    margin-top: 5px;
+    display: block;
+}
