@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elaine Zhao</title>
+    <title>elaine zhao</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
@@ -18,15 +17,15 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
-            <h1>Elaine Zhao</h1>
-            <p>CS @ University of Waterloo</p>
+            <h1>elaine zhao</h1>
+            <p>cs @ uwaterloo</p>
         </div>
     </div>
 </div>
@@ -34,70 +33,26 @@
 <!---about-->
 
 <div id="about">
-    <h2>About Me</h2>
-    <img src="headshot.jpeg" alt="this is my face">
-    <p>Hi! I'm Elaine, and I'm currently a first year Computer Science student at the University of
-        Waterloo. <br> <br>
-        My interests outside of tech include crocheting, Pokemon and debate (and I'm currently a member
-        of the University of Waterloo Debate Society). <br> I also love word games and I play the NYT mini crossword
-        and Wordle every day (unless I forget). My current fastest time for the NYT mini crossword is 26 seconds. <br><br>
+    <h2>elaine</h2>
+    <!--img src="headshot.jpeg" alt="this is my face"-->
+        <h6> <a href="about.html"> about me! </a></h6>
+        <h6> <a href="projects.html"> projects! </a></h6>
+        <h6> <a href="contact.html"> contact me! </a></h6>
+        <h6> <a href="resume.pdf"> my resume!</a></h6>
+        <div class="socials">
+            <a href="https://github.com/el6ine"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/elaine-zhao/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:e32zhao@uwaterloo.ca"><i class = "fa-solid fa-envelope"></i></a>
+        </div>
     
-    See my resume <a href="resume.pdf">here</a>!</p>
+    
+
+   
 </div>
 
-<!-----projects------->
-<div id="projects">
-    <h3>Projects</h3>
-    <div class="container">
-        <h4>Wordle +</h4>
-        <p>I love word games, so I re-created a version of the game Wordle as a Java GUI. </p>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="project pics/wordle menu.png" alt=""></div>
-            <div class="swiper-slide"><img src="project pics/wordle settings.png" alt=""></div>
-            <div class="swiper-slide"><img src="project pics/wordle game.png" alt=""></div>
-            <div class="swiper-slide"><img src="project pics/wordle stats.png" alt=""></div>
-            </div>
-                
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    <p>Try it out by downloading <a href="wordlefiles.zip" download="wordlefiles">this zip file</a> and opening the jar file in the folder!</p>
-    <p>I'm working on more cool stuff coming soon!</p>
-</div>
-</div>
 
-<!----contact---->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-col1">
-                <h5>Contact Me!</h5>
-                <p><i class="fa-solid fa-envelope"></i> e32zhao@uwaterloo.ca</p>
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/elaine-zhao/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/elaine.zhao.3720"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://github.com/el6ine"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="contact-col2">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="text" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!--script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
     loop: true,
@@ -123,9 +78,9 @@
     },
 
     });
-</script>
+</script-->
 
-<script>
+<!--script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzD3BUBXZiPbPnA2jj1flf7QfTreW5952F-N7Mgz_6F4kiGlCIxOmSTvOo7KdQ8N1N_SA/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg  = document.getElementById("msg")
@@ -142,6 +97,6 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-</script>
+</script-->
 </body>
 </html>
