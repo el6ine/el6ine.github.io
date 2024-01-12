@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="projects.html">projects</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h1>elaine zhao</h1>
+                    <p>cs @ uwaterloo</p>
+                </div>
+            </div>
+        </div>
+
+    
+        <!----contact---->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-col1">
+                <h5>Contact Me!</h5>
+                <p><i class="fa-solid fa-envelope"></i> e32zhao@uwaterloo.ca</p>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/elaine-zhao/"><i class="fa-brands fa-linkedin"></i></a>
+                    <!--a href="https://www.facebook.com/elaine.zhao.3720"><i class="fa-brands fa-facebook"></i></a-->
+                    <a href="https://github.com/el6ine"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-col2">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzD3BUBXZiPbPnA2jj1flf7QfTreW5952F-N7Mgz_6F4kiGlCIxOmSTvOo7KdQ8N1N_SA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg  = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent!"
+            setTimeout(function() {
+                msg.innerHTML= "";
+            },1000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
