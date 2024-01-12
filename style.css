@@ -5,7 +5,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --lightest-purple: rgb(237, 234, 255);
     scroll-behavior: smooth;
-    cursor: url('kuromidefault.cur'), auto;
 }
 
 body{
@@ -15,7 +14,7 @@ body{
 
 #header{
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     background-color: darkslateblue;
 }
 
@@ -90,7 +89,7 @@ h2{
 }
 
 #about img{
-    width: 13%;
+    width: 200px;
     border-radius: 50%;
     border-style: solid;
     border-width: 3px;
@@ -154,6 +153,7 @@ h5{
     color:darkslateblue;
     flex-basis: 35%;
     float: left;
+    margin-left: 15px;
 }
 
 .contact-col2{
@@ -218,4 +218,23 @@ form input, form textarea{
     color:darkslateblue;
     margin-top: 5px;
     display: block;
+}
+
+h6{
+    color: darkslateblue;
+    font-size: 23px;
+    padding: 15px;
+    text-decoration: none;
+    
+    transition: transform 0.2s;
+}
+
+h6 a:hover{
+    transform: translateY(-5px);
+    color:palevioletred;
+}
+
+#text-block {
+    margin-left: 300px;
+    margin-right: 300px;
 }
