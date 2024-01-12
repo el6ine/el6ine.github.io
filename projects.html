@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="projects.html">projects</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h1>elaine zhao</h1>
+                    <p>cs @ uwaterloo</p>
+                </div>
+            </div>
+        </div>
+
+
+<!-----projects------->
+<div id="projects">
+    <!--h3>Projects</h3-->
+
+    <div class="container">
+        <h4>Command Line Chess</h4>
+        <p>During Fall 2023, I took CS246, where we chose to build chess</p>
+    </div>
+
+    <div class="container">
+        <h4>Wordle +</h4>
+        <p>I love word games, so I re-created a version of the game Wordle as a Java GUI. </p>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="project pics/wordle menu.png" alt=""></div>
+            <div class="swiper-slide"><img src="project pics/wordle settings.png" alt=""></div>
+            <div class="swiper-slide"><img src="project pics/wordle game.png" alt=""></div>
+            <div class="swiper-slide"><img src="project pics/wordle stats.png" alt=""></div>
+            </div>
+                
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    effect: 'cube',
+    effect: 'coverflow',
+    coverflowEffect: {
+        slideShadows: false,
+    },
+
+    autoplay: {
+        delay:2000,
+    },
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    });
+</script>
+
+</body>
+</html>
