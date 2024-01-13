@@ -89,11 +89,7 @@ h2{
 }
 
 #about img{
-    width: 200px;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 3px;
-    border-color: darkslateblue;
+    width: 150px;
 }
 
 h3{
@@ -123,11 +119,11 @@ h4{
 }
 
 .swiper {
-    width: 300px;
+    width: 600px;
 }
 
 .swiper img{
-    width: 300px;
+    width: 600px;
 }
 
 .swiper-button-prev::after{
