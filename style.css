@@ -73,6 +73,7 @@ h1{
     padding-top: 5%;
     text-align: center;
     width:100%;
+    align-items: center;
 }
 
 #about p{
@@ -118,7 +119,7 @@ h4{
 }
 
 .swiper img{
-    width: 600px;
+    width: 100%;
 }
 
 .swiper-button-prev::after{
@@ -227,7 +228,7 @@ h2 a:hover{
     color:palevioletred;
 }
 
-#text-block {
-    margin-left: 300px;
-    margin-right: 300px;
+#text-block p {
+    margin-left: 20%;
+    margin-right: 20%;
 }
