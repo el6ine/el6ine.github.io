@@ -75,11 +75,6 @@ h1{
     width:100%;
 }
 
-h2{
-    font-size: 50px;
-    padding-bottom: 20px;
-}
-
 #about p{
     padding: 20px;
 }
@@ -216,16 +211,18 @@ form input, form textarea{
     display: block;
 }
 
-h6{
+h2 {
+    padding: 20px;
+}
+
+h2 a{
     color: darkslateblue;
-    font-size: 23px;
-    padding: 15px;
+    font-size: 30px;
     text-decoration: none;
-    
     transition: transform 0.2s;
 }
 
-h6 a:hover{
+h2 a:hover{
     transform: translateY(-5px);
     color:palevioletred;
 }
