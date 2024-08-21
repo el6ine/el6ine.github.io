@@ -100,6 +100,7 @@ h3{
     text-align: center;
     color: darkslateblue;
     padding:1%;
+    
 }
 
 #projects p{
@@ -133,6 +134,10 @@ h4{
 #contact {
     padding-top: 50px;
     margin-bottom: 50px;
+}
+
+#contact p a{
+    color:darkslateblue;
 }
 
 h5{
